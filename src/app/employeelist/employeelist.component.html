@@ -1,0 +1,20 @@
+<p>employeelist works!</p>
+
+
+<table class="table table-bordered">
+	<tr>
+		<th>Full Name</th>
+		<th>Address</th>
+		<th>Email</th>
+		<th>Mobile No.</th>
+		<th>Action</th>
+	</tr>
+
+	<tr *ngFor="let employee of employees">
+		<td>{{employee.name | titlecase}}</td>
+		<td>{{employee.address}}</td>
+		<td>{{employee.email}}</td>
+		<td>{{employee.mobileNumber}}</td>
+		<td><button class="btn btn-primary" (click)="addNumber()">Add Number</button></td>
+	</tr>
+</table>
